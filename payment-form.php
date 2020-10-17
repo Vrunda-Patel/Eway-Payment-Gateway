@@ -5,7 +5,7 @@ $f_name = $_POST[‘first_name’];
 $l_name = $_POST[‘last_name’];
 $email_address = $_POST[’email’];
 $phone = $_POST[‘phone_no’];
-$myemail = 'vrundap109@gmail.com';
+$myemail = 'test@gmail.com';
 $to =email_address;
 $email_subject = “Payment Successfully submitted: $name”;
 
