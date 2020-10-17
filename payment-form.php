@@ -32,7 +32,7 @@ mail($to,$email_subject,$email_body,$headers);
 <form method="post" name="myemailform" action="payment-form.php">
 <div id="make-payment">
   <h1>Make a payment</h1>
-  Payment Amount: <input type="text" id="amount" name="amount" value="" onChange="getamount()"/></br>
+
 Customer ID: <input type="text" name="customer_id" value="" /></br>
 First Name*: <input type="text" name="first_name" value="" /></br>
 Last Name*: <input type="text" name="last_name" value="" /></br>
