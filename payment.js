@@ -20,7 +20,7 @@ $('#make-payment').on('click', '#eway-dummy', function() {
   var paymentValue = $('#payment-value').val().replace(".", "");
 
   //Create custom button
-  $('#make-payment').append('<script src="https://secure.ewaypayments.com/scripts/eCrypt.js" class="eway-paynow-button" data-publicapikey="epk-5C4E9F57-C730-40B6-9E20-022CA44347C3" data-amount="' + paymentValue + '" data-email="' + email + '" data-phone= "' + phone_no +'" data-currency="AUD" + data-resulturl="http://www.eway.com.au/shared-demo/results.aspx"><\script>');
+  $('#make-payment').append('<script src="https://secure.ewaypayments.com/scripts/eCrypt.js" class="eway-paynow-button" data-publicapikey="epk-5C4E9F57-C730-40B6-9E20-022CA44347C3" data-amount="' + paymentValue + '" data-email="' + email + '" data-phone= "' + phone_no +'" data-currency="AUD" + data-resulturl="/"><\script>');
   //Click the button
   setTimeout(function() {
 	$('.eway-button').trigger('click');
