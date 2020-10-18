@@ -29,7 +29,7 @@ mail($to,$email_subject,$email_body,$headers);
  <body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<form method="post" name="myemailform" action="payment-form.php">
+<form method="post" name="myemailform" action="" id="payment">
 <div id="make-payment">
   <h1>Make a payment</h1>
 
@@ -42,8 +42,10 @@ Phone No* : (e.g. 0432 567 753)<input type="tel" id="phone_no" name="phone_no" p
   <input type="text" id="payment-value" />
   <button id="eway-dummy"><span style="display: block; min-height: 30px;">Pay Now ($<em id="payment-total">0.00</em>)</span>
   </button>
-</form>
 </div>
+</form>
+<p id="success">Payment has been done
+</p>
 <script src="payment.js">
 
 </script>
