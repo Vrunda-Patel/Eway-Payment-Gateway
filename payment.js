@@ -1,3 +1,11 @@
+$(document).ready(function () {
+    if(window.location.href.indexOf("Accesscode") > -1) {
+       $("#payment").hide();
+    }
+	else{
+		$("#success").hide();
+	}
+});
 $('#make-payment').on('keyup', '#payment-value', function() {
   //Change payment total in dummy button
   var paymentValue = $('#payment-value').val();
